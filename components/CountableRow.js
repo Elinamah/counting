@@ -18,6 +18,7 @@ export const CountableRow = ({ countable, changeCounts, index }) => (
       />
       <CountButton
         text="-"
+        disabled={countable.count === 0}
         submit={() => {
           changeCounts(-1, index);
         }}

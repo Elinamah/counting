@@ -17,6 +17,12 @@ export const AddRow = ({ countables, addNewCountable }) => {
       // Return without adding the countable
       return;
     }
+    if (name === "") {
+      // Display an error message if name value is empty
+      Alert.alert("Error", "A bird name must be entered");
+      // Return without adding the countable
+      return;
+    }
     // Call the "addNewCountable" function with the input value
     addNewCountable(name);
     // Reset the input value to an empty string
@@ -29,8 +35,9 @@ export const AddRow = ({ countables, addNewCountable }) => {
         placeholder="Enter a name"
         onChangeText={setName}
         value={name}
+        style={CommonStyles.textItem}
       />
-      <CountButton text="Add" submit={handleAddCountable} />
+      <CountButton text="ADD" submit={handleAddCountable} />
     </View>
   );
 };

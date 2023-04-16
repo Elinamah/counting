@@ -12,4 +12,10 @@ To run:
 
 Functionality i've implemented:
 
-1. Can't add duplicate name entries
+1. Can't add duplicate item name entries
+2. Can't add empty item names
+3. Clearing text input after adding an item name
+4. Soft keyboard automatically hides after adding an item
+5. Does not allow bird viewing to be of negative value (But button not greyed out)
+6. Gets message if list is empty
+7. Changed font size of "Enter a name"
